@@ -171,6 +171,9 @@ app.get("/getAllData",async(req,res)=>{
     }
 })
 
+app.use("/",(req,res)=>{
+    res.json({message:"hello from express App"});
+});
 
 
 app.listen(PORT, () => {
